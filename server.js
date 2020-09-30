@@ -1,11 +1,10 @@
 const express = require("express");
 const app = express();
 const port = 3000;
+const middleware = require("./middleware.js");
+app.use(middleware.logger);
 
-// app.get("/", (req, res) => {
-//   res.send("Welcome to Homepage!");
-// });
-app.get("/about", (req, res) => {
+app.get("/about", middleware.requireAuthentication, (req, res) => {
   res.send("This is the about page");
 });
 

@@ -9,8 +9,17 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
-  "author": "",
+  "author": "Syeda Ismat Farjana <diptyfmc17@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ismatfarjana/express-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ismatfarjana/express-server/issues"
+  },
+  "homepage": "https://github.com/ismatfarjana/express-server#readme",
   "description": ""
 }
